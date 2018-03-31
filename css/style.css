@@ -1,0 +1,17 @@
+
+/*  BASE STYLES!  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif, arial;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+.barcode {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 4em;
+}
