@@ -13,7 +13,7 @@
 <body>
 
 <header class="main-header">
-  <div class="container1">
+  <div class="container1 clearfix">
     <h1 class="barcode">Jeremiah G.</h1>
     <nav>
       <ul class="main-nav">
@@ -29,12 +29,15 @@
 </div>
 </header>
 
-<div class="container2">
+<div class="container2 clearfix">
 
-  <div class="marketing-page col">
+  <div class="portfolio">
     <a name="Portfolio"></a>
-    <h2>Portfolio</h2>
-    <img src="images/portfolio-1.png" alt="marketing" class="marketing">
+    <h2 class="portfolio">Portfolio</h2>
+  </div>
+  <div class="marketing-page col">
+
+    <img src="images/portfolio-1.png" alt="marketing">
       <h3>Marketing Page</h3>
       <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.
       </p>
@@ -74,7 +77,9 @@
   <footer class="main-footer">
     <a name="Contact"></a>
     <h1 class="barcode">Contact</h1>
-      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <div class="contact-msg">
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      </div>
         <div class="contact-info">
           <p>Phone  <strong>+1 (111) 555-1234</strong></p>
           <p>Email  <strong>email@yoursite.com</strong></p>
@@ -84,13 +89,14 @@
         <div class="footer-nav">
           <h3>Jeremiah G.</h3>
           <ul>
-            <li><a href="#">Back to top</a></li>
+            <li><a href="#" class="mobile">Back to top</a></li>
+            <div class="tablet">
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#">Home</a></li>
+            </div>
           </ul>
         </div>
   </footer>
-
-
-
-
 </body>
 </html>

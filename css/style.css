@@ -119,6 +119,9 @@ img {
   margin-left: 1.5em;
 }
 
+.tablet {
+  visibility: hidden;
+}
 
 /*  FOOTER  */
 
@@ -158,6 +161,7 @@ img {
   display: inline-block;
   width: 100%;
   padding: 1.5em 1.25em;
+  text-align: center;
 }
 
 .footer-nav h3 {
@@ -168,11 +172,125 @@ img {
 }
 
 .footer-nav a {
-  position: static;
+  color: #000;
+  position: inherit;
   float: right;
   text-transform: uppercase;
 }
 
 .footer-nav a:hover {
   color: rgb(244, 135, 9);
+}
+
+.replaced {
+  visibility: visible;
+  position: inline-block;
+}
+
+
+/*  SIZE MEDIA QUEREIES  */
+
+/* --Tablet-- */
+@media (min-width: 769px) {
+
+  body {
+    padding: 0;
+  }
+
+  .portfolio {
+    position: block;
+    width: 100%;
+    float: center;
+  }
+
+  .barcode {
+    margin-bottom: 0;
+  }
+
+  .main-header {
+    position: inline-block;
+    width: 100%;
+    top: 0;
+    padding-top: 0;
+  }
+
+  .container1,
+  .container2 {
+    margin: 0 auto;
+  }
+
+  .container2 {
+    margin-right: 2em;
+    margin-left: 2em;
+    }
+
+  .col {
+    position: inline-block;
+    width: 50%;
+    float: left;
+    padding: .4em;
+    }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 2.5em;
+    background: #f5f5f5;
+  }
+
+  .profile-pic {
+    position: inline-block;
+    width: 50%;
+    float: right;
+    padding: 0;
+    margin-top: 2em;
+    padding-left: 1.5em;
+  }
+
+  .my-goals {
+    text-align: center;
+    position: inline-block;
+    width: 50%;
+    float: left;
+    margin-top: 2em;
+    font-size: 19px;
+  }
+
+  .contact-msg {
+    padding-top: 1.75em;
+    padding-right: 5em;
+    padding-left: 5em;
+    text-align: center;
+  }
+
+  .mobile {
+    visibility: hidden;
+  }
+
+  .tablet {
+    visibility: visible;
+  }
+
+  .tablet a {
+    color: #000;
+    padding-left: 1.5em;
+  }
+
+  .tablet li {
+    text-align: right;
+    float: right;
+    position: relative;
+    right: -14%;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
 }
