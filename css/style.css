@@ -199,9 +199,7 @@ img {
   }
 
   .portfolio {
-    position: block;
     width: 100%;
-    float: center;
   }
 
   .barcode {
@@ -209,7 +207,6 @@ img {
   }
 
   .main-header {
-    position: inline-block;
     width: 100%;
     top: 0;
     padding-top: 0;
@@ -226,7 +223,6 @@ img {
     }
 
   .col {
-    position: inline-block;
     width: 50%;
     float: left;
     padding: .4em;
@@ -239,7 +235,6 @@ img {
   }
 
   .profile-pic {
-    position: inline-block;
     width: 50%;
     float: right;
     padding: 0;
@@ -249,7 +244,6 @@ img {
 
   .my-goals {
     text-align: center;
-    position: inline-block;
     width: 50%;
     float: left;
     margin-top: 2em;
@@ -305,13 +299,12 @@ img {
   }
 
   .barcode {
-    position: inline-block;
     float: left;
     padding-top: .2em;
   }
 
   .main-nav {
-    position: inline-block;
+
     float: right;
     padding-top: 2em;
     margin-right: 2em;
@@ -326,7 +319,6 @@ img {
   }
 
   .profile-pic {
-    padding: 10px auto;
     margin: 1.5em 3em;
     width: 40%;
   }
@@ -377,9 +369,6 @@ img {
     display: table;
     clear: both;
   }
-
-
-
 
 
 }
