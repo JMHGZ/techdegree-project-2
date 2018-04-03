@@ -9,6 +9,8 @@ body {
   font-family: 'Noto Sans', sans-serif, arial;
   line-height: 1.5;
   color: #3a3a3a;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 a {
@@ -154,6 +156,10 @@ img {
   padding-left: 10px;
 }
 
+.contact-info p {
+  padding-bottom: 0;
+}
+
 
 /*  NAV FOOTER  */
 
@@ -182,16 +188,11 @@ img {
   color: rgb(244, 135, 9);
 }
 
-.replaced {
-  visibility: visible;
-  position: inline-block;
-}
-
 
 /*  SIZE MEDIA QUEREIES  */
 
 /* --Tablet-- */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   body {
     padding: 0;
@@ -275,11 +276,15 @@ img {
     padding-left: 1.5em;
   }
 
+  .contact-info p {
+    padding-bottom: 0;
+  }
+
   .tablet li {
     text-align: right;
     float: right;
     position: relative;
-    right: -14%;
+    right: -8%;
   }
 
   .clearfix::after {
@@ -288,6 +293,90 @@ img {
     clear: both;
   }
 
+
+}
+
+/* -- Desktop -- */
+
+@media (min-width: 1024px) {
+
+  .main-header {
+    margin-bottom: 1.2em;
+  }
+
+  .barcode {
+    position: inline-block;
+    float: left;
+    padding-top: .2em;
+  }
+
+  .main-nav {
+    position: inline-block;
+    float: right;
+    padding-top: 2em;
+    margin-right: 2em;
+  }
+
+  .portfolio {
+    padding-right: 1.5em;
+  }
+
+  .desktop-container {
+    width: 100%;
+  }
+
+  .profile-pic {
+    padding: 10px auto;
+    margin: 1.5em 3em;
+    width: 40%;
+  }
+
+  .container1,
+  .container2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container2 {
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+
+  .col {
+    width: 32%;
+  }
+
+  .foot {
+    position: relative;
+    left: 43.2%;
+  }
+
+  .main-footer {
+    padding-top: 2.25em;
+    margin-top: 1em;
+  }
+
+  .contact-msg {
+    padding-top: 2.75em;
+    padding-right: 12em;
+    padding-left: 12em;
+    text-align: center;
+  }
+
+  .contact-msg p {
+    padding-top: 5em;
+    text-align: center;
+  }
+
+  .contact-info p {
+    padding-bottom: 0;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 
 
 
